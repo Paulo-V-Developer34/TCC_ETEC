@@ -1,0 +1,88 @@
+/*
+tamanhos
+total: 480 TEORIA
+total: 486 PRÁTICA (pois cada elemento a mais acrescenta +3px
+
+lote: 110 (pequeno)
+matrícula: 150 (pequeno_grande)
+ph,etc: 160 (médio)
+nome: 220 (médio_grande)
+data: 240 (grande) TEORIA, 243px na PRÁTICA (apenas em uma das células (célula_fim))
+nome do experimento: 373 (muito_grande)
+obs: 480 (maximo) TEORIA TEORIA, 486px na PRÁTICA
+
+INFELIZMENTE os novos valores abaixo não foram inseridos devido ao prazo da entrega da atividade
+altura: 842.52 px ---> (-3 * 17) ---> -51px ---> 791px totalAltura
+largura: 595.28 px ---> (-3 * 2) ---> -6px ---> 589px totalLargura
+*/
+
+img {
+    width:100%; 
+}
+
+.pequeno {
+  width: 110px;
+}
+
+.pequeno_grande {
+  width: 150px;
+}
+
+.medio {
+  width: 160px;
+}
+
+.medio_grande {
+  width: 220px;
+  word-wrap: normal;
+}
+
+.grande {
+  width: 240px;
+}
+
+.grande_fim {
+  width: 243px;
+}
+
+.muito_grande {
+  width: 373px;
+}
+
+.maximo {
+  width: 486px;
+  background-color: lightgray;
+}
+
+.baixo {
+  height: 90px;
+}
+
+.alto {
+  height: 140px;
+}
+
+.muito_alto {
+  height: 220px;
+}
+
+.titulo {
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: left;
+  vertical-align: text-top;
+}
+
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.semborda {
+  border: 0px white;
+}
