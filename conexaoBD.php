@@ -2,7 +2,7 @@
     // Dados relativos ao Banco de Dados
     $host = "localhost";
     $usuario = "root";
-    $senha = "Etec500@";
+    $senha = "senha";
     $bd = "labweb";
 
     // Faz a conexão ao banco de dados usando PDF
