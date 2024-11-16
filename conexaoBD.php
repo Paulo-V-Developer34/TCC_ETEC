@@ -10,7 +10,21 @@ $host = $_ENV['DB_HOST'];
 $usuario = $_ENV['DB_USER'];
 $senha = $_ENV['DB_PASS'];
 $bd = $_ENV['DB_NAME'];
+$port = $_ENV['DB_PORT'];
+$endpointId = $_ENV['DB_ENDPOINT'];
 
 // Faz a conexão ao banco de dados usando PDF
-$conecta = new PDO("mysql:dbname=$bd; host=$host; port=3306; charset=utf8", $usuario, $senha);
+
+// // forma local
+// $conecta = new PDO("mysql:dbname=$bd; host=$host; port=$port; charset=utf8", $usuario, $senha);
+
+// forma de produção
+// Construir a string DSN
+// $dsn = "pgsql:host=$host;port=$port;dbname=$bd;options=--endpoint=$endpointId;sslmode=require";
+$dsn = "pgsql:host=$host;port=$port;dbname=$bd;options=--endpoint=$endpointId;sslmode=require";
+// $dsn = "pgsql:host=$host;port=$port;dbname=$bd;sslmode=require";
+
+// Criar a conexão PDO
+$pdo = new PDO($dsn, $usuario, $senha);
+
 $conecta->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
