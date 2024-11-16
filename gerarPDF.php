@@ -8,17 +8,17 @@ O arquivo de testes possui notas adicionais
 $numeroLote = $_GET['numeroLote'];
 
 //carregar o dompdf do composer
-require '../../vendor/autoload.php'; // #01
+require 'vendor/autoload.php'; // #01
 
 //referenciar o namespace Dompdf
-Use Dompdf\Dompdf;
+use Dompdf\Dompdf;
 
 //chama o modelo_pdf
 require_once 'modeloPDF.php';
 
 //instanciar e usar o Dompdf
 //$dompdf = new Dompdf(); <--- este é um exemplo simples de como instanciar o Dompdf
-$dompdf = new Dompdf(['enable_remote'=>true]); // o ['enable_remote'=>true] serve para que o Dompdf pegue informações de conteúdos fora dos arquivos utilizados, como informações de sites por exemplo (http://localhost/img/module_table_botton.png).
+$dompdf = new Dompdf(['enable_remote' => true]); // o ['enable_remote'=>true] serve para que o Dompdf pegue informações de conteúdos fora dos arquivos utilizados, como informações de sites por exemplo (http://localhost/img/module_table_botton.png).
 
 //pega o valor do modelo pdf
 $html = html($numeroLote);
@@ -38,5 +38,4 @@ $dompdf->setPaper('A4', 'portrait');
 $dompdf->render();
 
 //gerar PDF
-$dompdf->stream("Relatório de experimento lote n°".$numeroLote);
-?>
+$dompdf->stream("Relatório de experimento lote n°" . $numeroLote);
