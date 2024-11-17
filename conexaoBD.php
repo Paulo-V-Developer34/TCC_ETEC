@@ -12,6 +12,9 @@ $senha = $_ENV['DB_PASS'];
 $bd = $_ENV['DB_NAME'];
 $port = $_ENV['DB_PORT'];
 $endpointId = $_ENV['DB_ENDPOINT'];
+$ssl_path = $_ENV['SSL_PATH'];
+
+$ssl_cert_path = __DIR__ . '/certs/ca.crt';
 
 // Faz a conexão ao banco de dados usando PDF
 
@@ -21,7 +24,7 @@ $endpointId = $_ENV['DB_ENDPOINT'];
 // forma de produção
 // Construir a string DSN
 // $dsn = "pgsql:host=$host;port=$port;dbname=$bd;options=--endpoint=$endpointId;sslmode=require";
-$dsn = "pgsql:host=$host;port=$port;dbname=$bd;options=--endpoint=$endpointId;sslmode=require";
+$dsn = "pgsql:host=$host;port=$port;dbname=$bd;options=--endpoint=$endpointId;sslmode=require;sslrootcert=$ssl_cert_path";
 // $dsn = "pgsql:host=$host;port=$port;dbname=$bd;sslmode=require";
 
 // Criar a conexão PDO
