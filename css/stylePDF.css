@@ -21,36 +21,44 @@ img {
 }
 
 .pequeno {
-  width: 110px;
+  /* width: 110px; */
+  width: 148px;
 }
 
 .pequeno_grande {
-  width: 150px;
+  /* width: 150px; */
+  width: 200px;
 }
 
 .medio {
-  width: 160px;
+  /* width: 160px; */
+  width: 188px;
 }
 
 .medio_grande {
-  width: 220px;
+  /* width: 220px; */
+  width: 268px;
   word-wrap: normal;
 }
 
 .grande {
-  width: 240px;
+  /* width: 240px; */
+  width: 320px;
 }
 
 .grande_fim {
-  width: 243px;
+  /* width: 243px; */
+  width: 323px;
 }
 
 .muito_grande {
-  width: 373px;
+  /* width: 373px; */
+  width: 471px;
 }
 
 .maximo {
-  width: 486px;
+  /* width: 486px; */
+  width: 646px;
   background-color: lightgray;
 }
 
@@ -63,7 +71,7 @@ img {
 }
 
 .muito_alto {
-  height: 220px;
+  height: 440px;
 }
 
 .titulo {
