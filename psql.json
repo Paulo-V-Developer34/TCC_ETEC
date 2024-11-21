@@ -1,0 +1,157 @@
+{
+    "psql": {
+        "users": [
+            {
+                "cpf":2222222200,
+                "nome": "Paulo Victor Nunes Cunha",
+                "telefoneFixo": "(13)12345-6789",
+                "telefoneCelular": "(13)12345-6789",
+                "email": "paulo@gmail.com",
+                "rua": "Rua Alfredo",
+                "bairro": "Bairro dos estudantes",
+                "cidade": "Guarujá",
+                "estado": "SP",
+                "senha": "senha123",
+                "tipo": 1
+            },
+            {
+                "cpf":1111111100,
+                "nome": "Nathaly de Souza Rodrigues Silva",
+                "telefoneFixo": "(13)12345-6789",
+                "telefoneCelular": "(13)12345-6789",
+                "email": "nathaly@gmail.com",
+                "rua": "Rua Alfredo",
+                "bairro": "Bairro dos estudantes",
+                "cidade": "Guarujá",
+                "estado": "SP",
+                "senha": "senha123",
+                "tipo": 2
+            },
+            {
+                "cpf":3333333300,
+                "nome": "Letycia dos Santos Almeida",
+                "telefoneFixo": "(13)12345-6789",
+                "telefoneCelular": "(13)12345-6789",
+                "email": "paulo@gmail.com",
+                "rua": "Rua Alfredo",
+                "bairro": "Bairro dos estudantes",
+                "cidade": "Guarujá",
+                "estado": "SP",
+                "senha": "senha123",
+                "tipo": 2
+            },
+            {
+                "cpf":4444444400,
+                "nome": "Midiã Haifa Araújo",
+                "telefoneFixo": "(13)12345-6789",
+                "telefoneCelular": "(13)12345-6789",
+                "email": "midia@gmail.com",
+                "rua": "Rua Alfredo",
+                "bairro": "Bairro dos estudantes",
+                "cidade": "Guarujá",
+                "estado": "SP",
+                "senha": "senha123",
+                "tipo": 3
+            },
+            {
+                "cpf":5555555500,
+                "nome": "Evellyn Vitória Coelho Torres",
+                "telefoneFixo": "(13)12345-6789",
+                "telefoneCelular": "(13)12345-6789",
+                "email": "evellyn@gmail.com",
+                "rua": "Rua Alfredo",
+                "bairro": "Bairro dos estudantes",
+                "cidade": "Guarujá",
+                "estado": "SP",
+                "senha": "senha123",
+                "tipo": 3
+            }
+        ],
+        "tecnicos": [
+            {
+                "matricula": 1,
+                "cargo": "tecnico",
+                "registro": "não sei",
+                "dataAdmissao": 123,
+                "dataRecisao": 123,
+                "statusTecnico": true,
+                "cpf":1111111100
+            },
+            {
+                "matricula": 2,
+                "cargo": "tecnico",
+                "registro": "não sei",
+                "dataAdmissao": 123,
+                "dataRecisao": 123,
+                "statusTecnico": true,
+                "cpf":3333333300
+            }
+        ],
+        "administradores": [
+            {
+                "matricula": 1,
+                "cargo": "tecnico",
+                "registro": "não sei",
+                "dataAdmissao": 123,
+                "dataRecisao": 123,
+                "statusAdministrador": true,
+                "cpf":2222222200
+            }
+        ],
+        "clientes": [
+            {
+                "numero": 1,
+                "empresa": "PoPCorns",
+                "statusUsuario": true,
+                "cpf":4444444400
+            },
+            {
+                "numero": 1,
+                "empresa": "PoPCorns",
+                "statusUsuario": true,
+                "cpf":5555555500
+            }
+        ],
+        "experimentos": [
+            {
+                "numeroLote":1,
+                "dataExperimento": 123,
+                "dataValidadeExperimento": 123,
+                "peso":123,
+                "volume":234,
+                "presencaSM": true,
+                "temperaturaLote": 234,
+                "ph":54,
+                "condicaoExperimento": "Aprovado",
+                "obsExperimento": "Este esperimento tem um gosto ruim, por gentiliza não coman!",
+                "matriculaTecnico": 1
+            },
+            {
+                "numeroLote":2,
+                "dataExperimento": 123,
+                "dataValidadeExperimento": 123,
+                "peso":123,
+                "volume":234,
+                "presencaSM": true,
+                "temperaturaLote": 234,
+                "ph":54,
+                "condicaoExperimento": "Aprovado",
+                "obsExperimento": "Este esperimento tem um cheiro ruim, por gentiliza não utilizar como perfume!",
+                "matriculaTecnico": 1
+            },
+            {
+                "numeroLote":3,
+                "dataExperimento": 123,
+                "dataValidadeExperimento": 123,
+                "peso":123,
+                "volume":234,
+                "presencaSM": false,
+                "temperaturaLote": 234,
+                "ph":54,
+                "condicaoExperimento": "Aprovado",
+                "obsExperimento": "Este esperimento é corrosivo, por gentiliza não utilizar como colírio, perfume, energético, adubo, ração, material limpante, ou para quaisquer outros fins diferentes ou semelhantes, iguais ou obstantes!",
+                "matriculaTecnico": 2
+            }
+        ]
+    }
+}

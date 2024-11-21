@@ -23,6 +23,18 @@
                         $_SESSION['cpf'] = $linha['cpf'];
                         $_SESSION['nome'] = $linha['nome'];
                         $_SESSION['tipo_usuario'] = $linha['tipo_usuario'];
+
+                        //Criar os cookies para simular o BD
+                        if(!isset($_COOKIE['psql'])) {
+                            //pegando o BD falso
+                            $jsonbd = file_get_contents("psql.json");
+                            $dadosbd = json_decode($jsonbd);
+                            
+                            //criar o cookie
+                            setcookie('psql',$dadosbd, time() + (86400 * 30));
+                        }
+
+
                         //Direciona para a Página Inicial
                         header ('Location: paginaInicial.php');
                     }else{
